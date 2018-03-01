@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BLEEDBYTES</title>
+  <title>RIG VEHICLE SURVEILLANCE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
 <body>
   <nav>
     <div class="nav-wrapper nav-col">
-      <a href="#" class="brand-logo">RIG</a>
+      <a href="#" class="brand-logo">AVENGERS</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <a href="home.html">Home</a>
@@ -27,11 +27,41 @@
 
       </ul>
     </div>
+    <!-- login card-->
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card darken-3">
+            <div class="card-content bgcol black-text">
+              <span class="card-title center">LOGIN</span>
+              <form action="auth.js">
+                <div class="row">
+                  <div class="input-field col l6 s12">
+                    <label for="email" class="active">EMAIL</label><br>
+                    <input type="email" name="emailid" class="validate" id="email_id" placeholder="enter your email">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
 
-
-
-   
-
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyACdVp1O_BwDifqb3CPoQk0Rktfsp5vY0g",
+        authDomain: "rigvehicle.firebaseapp.com",
+        databaseURL: "https://rigvehicle.firebaseio.com",
+        projectId: "rigvehicle",
+        storageBucket: "rigvehicle.appspot.com",
+        messagingSenderId: "432999432639"
+      };
+      firebase.initializeApp(config);
+    </script>
 
 </body>
 
