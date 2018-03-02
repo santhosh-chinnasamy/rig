@@ -1,7 +1,7 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    window.location.href="rigsurvillence.firebaseapp.com";
+window.open('https://rigsurvillence.firebaseapp.com');
 
   } else {
     // No user is signed in.
